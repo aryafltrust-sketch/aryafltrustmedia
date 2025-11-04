@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryafltrust Media</title>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: #667eea;
+    }
+    
+    .submit-btn {
+      transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+      transform: scale(1.05);
+    }
+    
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      z-index: 1000;
+      animation: slideIn 0.3s ease;
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    .success-toast {
+      background-color: #10b981;
+    }
+    
+    .error-toast {
+      background-color: #ef4444;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="font-sans"><!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-6xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+     <div class="flex items-center gap-3"><img src="https://i.pinimg.com/736x/dc/0e/d6/dc0ed676bae532ef4f9493dd0ddc72a8.jpg" alt="Aryafltrust Media Logo" class="w-10 h-10 rounded-full object-cover" onerror="this.src=''; this.alt='Logo failed to load'; this.style.display='none';">
+      <h1 id="nav-label-name" class="text-2xl font-bold text-gray-800">Aryafltrust Media</h1>
+     </div>
+     <div class="flex gap-6"><a href="#about" class="nav-link text-gray-600 font-medium">About</a> <a href="#releases" class="nav-link text-gray-600 font-medium">Releases</a> <a href="#demos" class="nav-link text-gray-600 font-medium">Submit Demo</a> <a href="#contact" class="nav-link text-gray-600 font-medium">Contact</a>
+     </div>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section class="gradient-bg text-white py-24 px-6 relative overflow-hidden">
+   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+   <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://i.pinimg.com/736x/6c/45/92/6c45924fe6e1e20138325fdbed4911d1.jpg');"></div>
+   <div class="max-w-4xl mx-auto text-center relative z-10">
+    <h2 id="hero-label-name" class="text-5xl font-bold mb-4 text-white drop-shadow-lg">Aryafltrust Media</h2>
+    <p id="hero-tagline" class="text-xl opacity-90 text-white drop-shadow-lg">Independent Music Label</p>
+   </div>
+  </section><!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-gray-50">
+   <div class="max-w-4xl mx-auto">
+    <h3 id="about-title" class="text-4xl font-bold text-gray-800 mb-8 text-center">About Us</h3>
+    <div class="bg-white rounded-lg shadow-lg p-8">
+     <p id="about-description" class="text-gray-700 text-lg leading-relaxed">Hi, I am Aryafltrust Media, where I develop this label, and I come from Indonesia. This is an independent label, and we are not as big as other labels abroad. We work on music distribution, marketing, and social media promotion. Our team consists of 5-6 people. We hope we can help other independent artists in our label.</p>
+    </div>
+   </div>
+  </section><!-- Releases Section -->
+  <section id="releases" class="py-20 px-6">
+   <div class="max-w-6xl mx-auto">
+    <h3 id="releases-title" class="text-4xl font-bold text-gray-800 mb-12 text-center">Our Releases</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="card bg-white rounded-lg shadow-lg p-6 text-center">
+      <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center"><span class="text-3xl">🎵</span>
+      </div>
+      <h4 class="text-xl font-bold text-gray-800 mb-2">AURORA</h4>
+     </div>
+     <div class="card bg-white rounded-lg shadow-lg p-6 text-center">
+      <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center"><span class="text-3xl">🎶</span>
+      </div>
+      <h4 class="text-xl font-bold text-gray-800 mb-2">BAILAO BAILAO</h4>
+     </div>
+     <div class="card bg-white rounded-lg shadow-lg p-6 text-center">
+      <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center"><span class="text-3xl">🎧</span>
+      </div>
+      <h4 class="text-xl font-bold text-gray-800 mb-2">MONTAGEM WESETA (Remix)</h4>
+     </div>
+     <div class="card bg-white rounded-lg shadow-lg p-6 text-center">
+      <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center"><span class="text-3xl">🎤</span>
+      </div>
+      <h4 class="text-xl font-bold text-gray-800 mb-2">MONTAGEM ROMPER 2</h4>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Form Section -->
+  <section id="demos" class="py-20 px-6 bg-gray-50">
+   <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-gray-800 mb-8">Get In Touch</h3><!-- Elfsight Contact Form | Untitled Contact Form -->
+    <div class="elfsight-app-d23b7e34-ab66-4083-be40-5074b11d71f5" data-elfsight-app-lazy></div>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="contact" class="py-20 px-6">
+   <div class="max-w-4xl mx-auto text-center">
+    <h3 id="contact-title" class="text-4xl font-bold text-gray-800 mb-8">Get In Touch</h3>
+    <div class="bg-white rounded-lg shadow-lg p-8">
+     <p class="text-gray-700 text-lg mb-4">For inquiries and collaborations:</p><a id="contact-email-link" href="mailto:aryafltrust@gmail.com" class="text-2xl font-bold text-purple-600 hover:text-purple-700">aryafltrust@gmail.com</a>
+    </div>
+   </div>
+  </section><!-- AI Chatbot --> <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-a60a92fb-326f-4d37-8c45-7c477e311c2b" data-elfsight-app-lazy></div><!-- Cookie Consent --> <!-- Elfsight Cookie Consent | Untitled Cookie Consent -->
+  <div class="elfsight-app-305f955b-aada-430a-a71c-a9b02a3898cc" data-elfsight-app-lazy></div><!-- Number Counter --> <!-- Elfsight Number Counter | Untitled Number Counter -->
+  <div class="elfsight-app-5a8b9083-3480-42ad-8177-c66abc54fb40" data-elfsight-app-lazy></div><!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 px-6">
+   <div class="max-w-6xl mx-auto text-center">
+    <p id="footer-label-name" class="text-lg font-semibold mb-2">Aryafltrust Media</p>
+    <p class="text-gray-400">© 2024 All rights reserved</p>
+   </div>
+  </footer>
+  <script>
+    const defaultConfig = {
+      label_name: "Aryafltrust Media",
+      tagline: "Independent Music Label",
+      about_title: "About Us",
+      about_text: "Hi, I am Aryafltrust Media, where I develop this label, and I come from Indonesia. This is an independent label, and we are not as big as other labels abroad. We work on music distribution, marketing, and social media promotion. Our team consists of 5-6 people. We hope we can help other independent artists in our label.",
+      releases_title: "Our Releases",
+      demos_title: "Submit Your Demo",
+      submit_button_text: "Submit Demo",
+      contact_title: "Get In Touch",
+      contact_email: "aryafltrust@gmail.com",
+      background_color: "#667eea",
+      card_color: "#ffffff",
+      text_color: "#1f2937",
+      primary_button_color: "#9333ea",
+      secondary_color: "#ec4899",
+      font_family: "sans-serif",
+      font_size: 16
+    };
+
+    let recordCount = 0;
+
+    const dataHandler = {
+      onDataChanged(data) {
+        recordCount = data.length;
+      }
+    };
+
+    async function onConfigChange(config) {
+      const labelName = config.label_name || defaultConfig.label_name;
+      const tagline = config.tagline || defaultConfig.tagline;
+      const aboutTitle = config.about_title || defaultConfig.about_title;
+      const aboutText = config.about_text || defaultConfig.about_text;
+      const releasesTitle = config.releases_title || defaultConfig.releases_title;
+      const demosTitle = config.demos_title || defaultConfig.demos_title;
+      const submitButtonText = config.submit_button_text || defaultConfig.submit_button_text;
+      const contactTitle = config.contact_title || defaultConfig.contact_title;
+      const contactEmail = config.contact_email || defaultConfig.contact_email;
+      
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const cardColor = config.card_color || defaultConfig.card_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryButtonColor = config.primary_button_color || defaultConfig.primary_button_color;
+      const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+      
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontSize = config.font_size || defaultConfig.font_size;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      
+      document.getElementById('nav-label-name').textContent = labelName;
+      document.getElementById('hero-label-name').textContent = labelName;
+      document.getElementById('hero-tagline').textContent = tagline;
+      
+      // Keep hero text white for visibility over background image
+      document.getElementById('hero-label-name').style.color = '#ffffff';
+      document.getElementById('hero-tagline').style.color = '#ffffff';
+      document.getElementById('about-title').textContent = aboutTitle;
+      document.getElementById('about-description').textContent = aboutText;
+      document.getElementById('releases-title').textContent = releasesTitle;
+      document.getElementById('demos-title').textContent = demosTitle;
+      document.getElementById('submit-btn-text').textContent = submitButtonText;
+      document.getElementById('contact-title').textContent = contactTitle;
+      document.getElementById('contact-email-link').textContent = contactEmail;
+      document.getElementById('contact-email-link').href = `mailto:${contactEmail}`;
+      document.getElementById('footer-label-name').textContent = labelName;
+      
+      document.querySelectorAll('.gradient-bg').forEach(el => {
+        el.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, ${primaryButtonColor} 100%)`;
+      });
+      
+      document.querySelectorAll('.card').forEach(el => {
+        el.style.backgroundColor = cardColor;
+      });
+      
+      document.querySelectorAll('h1, h2, h3, h4, p, a, label, input, button').forEach(el => {
+        el.style.color = textColor;
+      });
+      
+      document.getElementById('submit-btn').style.background = `linear-gradient(to right, ${primaryButtonColor}, ${secondaryColor})`;
+      
+      document.getElementById('nav-label-name').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('hero-label-name').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('hero-tagline').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('about-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('about-description').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('releases-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('demos-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('contact-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      
+      document.getElementById('nav-label-name').style.fontSize = `${baseFontSize * 1.5}px`;
+      document.getElementById('hero-label-name').style.fontSize = `${baseFontSize * 3}px`;
+      document.getElementById('hero-tagline').style.fontSize = `${baseFontSize * 1.25}px`;
+      document.getElementById('about-title').style.fontSize = `${baseFontSize * 2.5}px`;
+      document.getElementById('about-description').style.fontSize = `${baseFontSize * 1.125}px`;
+      document.getElementById('releases-title').style.fontSize = `${baseFontSize * 2.5}px`;
+      document.getElementById('demos-title').style.fontSize = `${baseFontSize * 2.5}px`;
+      document.getElementById('contact-title').style.fontSize = `${baseFontSize * 2.5}px`;
+    }
+
+    function showToast(message, isSuccess) {
+      const toast = document.createElement('div');
+      toast.className = `toast ${isSuccess ? 'success-toast' : 'error-toast'}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.remove();
+      }, 3000);
+    }
+
+    document.getElementById('demo-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      if (recordCount >= 999) {
+        showToast('Maximum limit of 999 submissions reached. Please contact us directly.', false);
+        return;
+      }
+      
+      const submitBtn = document.getElementById('submit-btn');
+      const submitBtnText = document.getElementById('submit-btn-text');
+      const originalText = submitBtnText.textContent;
+      
+      submitBtn.disabled = true;
+      submitBtnText.textContent = 'Submitting...';
+      
+      const artistName = document.getElementById('artist-name').value;
+      const artistEmail = document.getElementById('artist-email').value;
+      const releaseName = document.getElementById('release-name').value;
+      const demoLink = document.getElementById('demo-link').value;
+      const genre = document.getElementById('genre').value;
+      const message = document.getElementById('message').value;
+      
+      // Create email content
+      const subject = `Demo Submission: ${releaseName} by ${artistName}`;
+      const emailBody = `New Demo Submission for Aryafltrust Media
+
+Artist Details:
+- Name: ${artistName}
+- Email: ${artistEmail}
+- Release Name: ${releaseName}
+- Genre: ${genre || 'Not specified'}
+- Demo Link: ${demoLink}
+
+${message ? `Additional Message:\n${message}` : ''}
+
+Submitted on: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}
+
+---
+This submission was sent through the Aryafltrust Media website.`;
+
+      // Create mailto link
+      const mailtoLink = `mailto:aryafltrust@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Save to database
+      const result = await window.dataSdk.create({
+        artist_name: artistName,
+        artist_email: artistEmail,
+        release_name: releaseName,
+        demo_link: demoLink,
+        genre: genre || '',
+        message: message || '',
+        submitted_at: new Date().toISOString()
+      });
+      
+      submitBtn.disabled = false;
+      submitBtnText.textContent = originalText;
+      
+      if (result.isOk) {
+        // Open email client
+        window.open(mailtoLink, '_blank');
+        showToast('Demo submitted! Your email client should open with the submission details.', true);
+        document.getElementById('demo-form').reset();
+      } else {
+        showToast('Failed to submit demo. Please try again.', false);
+      }
+    });
+
+    async function init() {
+      if (window.dataSdk) {
+        const initResult = await window.dataSdk.init(dataHandler);
+        if (!initResult.isOk) {
+          console.error('Failed to initialize data SDK');
+        }
+      }
+      
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange,
+          mapToCapabilities: (config) => ({
+            recolorables: [
+              {
+                get: () => config.background_color || defaultConfig.background_color,
+                set: (value) => {
+                  config.background_color = value;
+                  window.elementSdk.setConfig({ background_color: value });
+                }
+              },
+              {
+                get: () => config.card_color || defaultConfig.card_color,
+                set: (value) => {
+                  config.card_color = value;
+                  window.elementSdk.setConfig({ card_color: value });
+                }
+              },
+              {
+                get: () => config.text_color || defaultConfig.text_color,
+                set: (value) => {
+                  config.text_color = value;
+                  window.elementSdk.setConfig({ text_color: value });
+                }
+              },
+              {
+                get: () => config.primary_button_color || defaultConfig.primary_button_color,
+                set: (value) => {
+                  config.primary_button_color = value;
+                  window.elementSdk.setConfig({ primary_button_color: value });
+                }
+              },
+              {
+                get: () => config.secondary_color || defaultConfig.secondary_color,
+                set: (value) => {
+                  config.secondary_color = value;
+                  window.elementSdk.setConfig({ secondary_color: value });
+                }
+              }
+            ],
+            borderables: [],
+            fontEditable: {
+              get: () => config.font_family || defaultConfig.font_family,
+              set: (value) => {
+                config.font_family = value;
+                window.elementSdk.setConfig({ font_family: value });
+              }
+            },
+            fontSizeable: {
+              get: () => config.font_size || defaultConfig.font_size,
+              set: (value) => {
+                config.font_size = value;
+                window.elementSdk.setConfig({ font_size: value });
+              }
+            }
+          }),
+          mapToEditPanelValues: (config) => new Map([
+            ["label_name", config.label_name || defaultConfig.label_name],
+            ["tagline", config.tagline || defaultConfig.tagline],
+            ["about_title", config.about_title || defaultConfig.about_title],
+            ["about_text", config.about_text || defaultConfig.about_text],
+            ["releases_title", config.releases_title || defaultConfig.releases_title],
+            ["demos_title", config.demos_title || defaultConfig.demos_title],
+            ["submit_button_text", config.submit_button_text || defaultConfig.submit_button_text],
+            ["contact_title", config.contact_title || defaultConfig.contact_title],
+            ["contact_email", config.contact_email || defaultConfig.contact_email]
+          ])
+        });
+      }
+    }
+
+    init();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99911250c7dfe9cb',t:'MTc2MjIyNzQzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
